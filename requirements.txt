@@ -1,0 +1,6 @@
+opencv-python
+pandas
+matplotlib
+gradio
+torch
+numpy
