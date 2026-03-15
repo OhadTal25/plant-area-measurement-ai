@@ -8,7 +8,7 @@ This project detects plant leaves in an image, segments them with AI, and calcul
 
 ## 🎥 Demo
 
-![Demo](demo.gif)
+https://github.com/OhadTal25/plant-area-measurement-ai/blob/main/Ohad-SAM-AI.mp4
 
 The tool allows interactive plant detection and measurement directly from the browser.
 
