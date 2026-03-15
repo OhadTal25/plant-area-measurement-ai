@@ -1,105 +1,143 @@
-# Plant Area Tool, SAM-based leaf detection and area measurement
+# 🌿 Plant Leaf Area Measurement using AI
 
-This repository contains a Google Colab project that detects plant leaves from an image, segments them with Meta's Segment Anything Model, and estimates plant area in cm² after image calibration.
+AI tool for **automatic plant leaf segmentation and area measurement** from images using **Meta's Segment Anything Model (SAM)**.
 
-## What the project does
+This project detects plant leaves in an image, segments them with AI, and calculates their **real-world surface area** using a calibration step.
 
-- Upload a plant image
-- Calibrate the image by clicking 2 reference points
-- Detect plant regions with SAM
-- Filter masks using a green HSV mask
-- Measure each detected plant area
-- Export:
-  - CSV with per-plant measurements
-  - PNG overlay image
-  - Histogram of area distribution
+---
 
-## Main features
+## 🎥 Demo
 
-- SAM automatic segmentation
-- Green pixel filtering in HSV
-- Manual calibration using a known reference length
-- Single plant selection
-- Multi-select by clicking
-- Box selection for grouped measurements
-- Gradio UI for interactive analysis
+![Demo](demo.gif)
 
-## Project structure
+The tool allows interactive plant detection and measurement directly from the browser.
 
-```text
-plant-area-tool-repo/
-├── app.py
-├── requirements.txt
-├── .gitignore
-├── README.md
-└── notebook/
-    └── SAM3_NEW.ipynb
+---
+
+## 🚀 Features
+
+• Automatic **leaf detection** using Segment Anything
+• **Pixel-level segmentation** of plant regions
+• **Green color filtering** to isolate vegetation
+• **Calibration system** to convert pixels → real-world area
+• **Interactive leaf selection**
+• **Area measurement per leaf**
+• Export results to **CSV**
+• Visual overlay of detected regions
+
+---
+
+## 🧠 How It Works
+
+The pipeline:
+
+```
+Input Image
+      ↓
+Segment Anything Model (SAM)
+      ↓
+Green HSV Filtering
+      ↓
+Leaf Mask Selection
+      ↓
+Pixel Area Calculation
+      ↓
+Calibration
+      ↓
+Real-World Leaf Area
 ```
 
-## Setup
+---
 
-### 1. Clone the repository
+## 🛠 Technologies Used
 
-```bash
-git clone https://github.com/YOUR_USERNAME/plant-area-tool.git
-cd plant-area-tool
+* Python
+* PyTorch
+* Segment Anything (SAM)
+* OpenCV
+* NumPy
+* Gradio
+* Pandas
+* Matplotlib
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/OhadTal25/plant-area-measurement-ai.git
+cd plant-area-measurement-ai
 ```
 
-### 2. Create a virtual environment
+Install dependencies:
 
-```bash
-python -m venv .venv
 ```
-
-Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-macOS/Linux:
-
-```bash
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
 pip install -r requirements.txt
 pip install git+https://github.com/facebookresearch/segment-anything.git
 ```
 
-### 4. Download the SAM checkpoint
+---
 
-Download this file and place it in the project root:
+## 📥 Download SAM Model
 
-```text
+Download the checkpoint:
+
+```
 sam_vit_h_4b8939.pth
 ```
 
-Official checkpoint source:
-`https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth`
+From:
 
-## Run locally
+https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
 
-```bash
+Place it in the project root directory.
+
+---
+
+## ▶️ Run the Application
+
+```
 python app.py
 ```
 
-## Notes
+The Gradio interface will open in your browser.
 
-- The model checkpoint is large, so it should not be committed to GitHub.
-- If you mainly want to share the code from Colab, you can also keep the notebook version in the repo and add `app.py` as the cleaner runnable version.
-- If you want, you can later split the code into:
-  - `src/segmentation.py`
-  - `src/ui.py`
-  - `src/utils.py`
+---
 
-## Suggested GitHub description
+## 📊 Example Output
 
-SAM-based plant leaf segmentation and area measurement from images, with calibration, interactive selection, CSV export, and Gradio UI.
+The system produces:
 
-## Suggested topics
+• segmented plant regions
+• area calculation per leaf
+• visual overlay
+• CSV file with measurements
 
-`segment-anything`, `sam`, `computer-vision`, `plant-phenotyping`, `image-segmentation`, `gradio`, `opencv`, `python`
+---
+
+## 🌱 Potential Applications
+
+Plant phenotyping
+Agricultural research
+Crop growth analysis
+Leaf area estimation
+Computer vision experiments
+
+---
+
+## 👨‍💻 Author
+
+**Ohad Tal**
+
+AI & Computer Vision enthusiast exploring automation and real-world AI applications.
+
+GitHub:
+https://github.com/OhadTal25
+
+---
+
+## ⭐ If you like this project
+
+Give the repository a star ⭐
