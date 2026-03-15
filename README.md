@@ -8,7 +8,7 @@ This project detects plant leaves in an image, segments them with AI, and calcul
 
 ## 🎥 Demo
 
-[▶️ Watch the demo](demo.mp4)
+[![Watch the demo](https://img.shields.io/badge/Watch-Demo-green)](demo.mp4)
 
 The tool allows interactive plant detection and measurement directly from the browser.
 
