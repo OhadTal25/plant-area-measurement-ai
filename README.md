@@ -8,7 +8,7 @@ This project detects plant leaves in an image, segments them with AI, and calcul
 
 ## 🎥 Demo
 
-<video src="demo.mp4" controls width="800"></video>
+[▶️ Watch the demo](demo.mp4)
 
 The tool allows interactive plant detection and measurement directly from the browser.
 
