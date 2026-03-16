@@ -1,8 +1,14 @@
 # 🌿 Rosette Segmentation and Area Measurement using AI
 
-AI tool for **automatic plant leaf segmentation and area measurement** from images using **Meta's Segment Anything Model (SAM)**.
+AI tool for automatic plant rosette segmentation and total visible area measurement from images using Meta's Segment Anything Model (SAM).
 
-This project detects plant leaves in an image, segments them with AI, and calculates their **real-world surface area** using a calibration step.
+This project segments a single plant rosette from an image and estimates its real-world visible area using image calibration.
+
+This project segments a single plant rosette from an image and estimates its real-world visible area using image calibration.
+
+AI tool for **automatic plant rosette segmentation and area measurement** from images using **Meta's Segment Anything Model (SAM)**.
+
+This project segments a single plant rosette from an image, segments them with AI, and calculates their **real-world surface area** using a calibration step.
 
 ---
 
@@ -16,12 +22,12 @@ The tool allows interactive plant detection and measurement directly from the br
 
 ## 🚀 Features
 
-- Automatic leaf detection using Segment Anything
+- Automatic rosette detection using Segment Anything
 - Pixel-level segmentation of plant regions
 - Green color filtering to isolate vegetation
 - Calibration system to convert pixels to real-world area
 - Interactive leaf selection
-- Area measurement per leaf
+- Interactive plant region analysis
 - Export results to CSV
 - Visual overlay of detected regions
 
@@ -44,7 +50,7 @@ Pixel Area Calculation
       ↓
 Calibration
       ↓
-Real-World Leaf Area
+Real-World Rosette Area
 ```
 
 ---
@@ -64,7 +70,7 @@ Real-World Leaf Area
 
 ## Why this project matters
 
-Leaf area is an important indicator in plant phenotyping and agricultural research.
+Rosette area is an important indicator in plant phenotyping and agricultural research.
 This project demonstrates how foundation models like SAM can be applied to real-world biological image analysis.
 
 ## 📦 Installation
@@ -116,7 +122,7 @@ The Gradio interface will open in your browser.
 The system produces:
 
 • segmented plant regions
-• area calculation per leaf
+• total rosette area calculation
 • visual overlay
 • CSV file with measurements
 
