@@ -10,6 +10,8 @@ AI tool for **automatic plant rosette segmentation and area measurement** from i
 
 This project segments a single plant rosette from an image, segments them with AI, and calculates their **real-world surface area** using a calibration step.
 
+A plant rosette refers to the circular arrangement of leaves around the plant center. 
+The projected rosette area represents the total visible leaf surface of the plant when viewed from above.
 ---
 
 ## 🎥 Demo
@@ -20,16 +22,15 @@ The tool allows interactive plant detection and measurement directly from the br
 
 ---
 
-## 🚀 Features
+## Features
 
-- Automatic rosette detection using Segment Anything
+- Automatic plant rosette segmentation using Segment Anything
 - Pixel-level segmentation of plant regions
 - Green color filtering to isolate vegetation
-- Calibration system to convert pixels to real-world area
-- Interactive leaf selection
-- Interactive plant region analysis
-- Export results to CSV
-- Visual overlay of detected regions
+- Calibration from pixels to real-world units
+- Estimation of total visible rosette area
+- CSV export of measurements
+- Visual overlay of the segmented plant region
 
 ---
 
