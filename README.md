@@ -1,4 +1,4 @@
-# 🌿 Plant Rosette Area Measurement using AI
+# 🌿 Plant Rosette Segmentation and Area Measurement using AI
 
 AI tool for **automatic plant leaf segmentation and area measurement** from images using **Meta's Segment Anything Model (SAM)**.
 
