@@ -16,14 +16,14 @@ The tool allows interactive plant detection and measurement directly from the br
 
 ## 🚀 Features
 
-• Automatic **leaf detection** using Segment Anything
-• **Pixel-level segmentation** of plant regions
-• **Green color filtering** to isolate vegetation
-• **Calibration system** to convert pixels → real-world area
-• **Interactive leaf selection**
-• **Area measurement per leaf**
-• Export results to **CSV**
-• Visual overlay of detected regions
+- Automatic leaf detection using Segment Anything
+- Pixel-level segmentation of plant regions
+- Green color filtering to isolate vegetation
+- Calibration system to convert pixels to real-world area
+- Interactive leaf selection
+- Area measurement per leaf
+- Export results to CSV
+- Visual overlay of detected regions
 
 ---
 
