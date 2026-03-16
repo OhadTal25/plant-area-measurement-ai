@@ -62,6 +62,11 @@ Real-World Leaf Area
 
 ---
 
+## Why this project matters
+
+Leaf area is an important indicator in plant phenotyping and agricultural research.
+This project demonstrates how foundation models like SAM can be applied to real-world biological image analysis.
+
 ## 📦 Installation
 
 Clone the repository:
